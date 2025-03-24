@@ -1,23 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticket</title>
     <link rel="shortcut icon" href="./images/fare.png" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .raleway {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
 
     <!-- font awasam -->
-     <link rel="stylesheet" href="./css/all.min.css">
-     <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
 
     <!-- daisy and Tailwaid -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <header>
+        <!-- navbar start -->
+        <div class="max-w-7xl mx-auto lg:mt-12">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow raleway font-medium text-xl">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost raleway font-extrabold text-4xl border lg:text-[#1dd100]">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 w-[450px] flex justify-around raleway font-medium text-xl">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a
+                        class="px-4 py-2 lg:px-8 lg:py-4 bg-[#1dd1001A] rounded-xl text-[#1DD100] border gap-1 lg:hover:bg-[#1dd100] lg:hover:text-white font-bold text-xl">Bus
+                        <i class="fa-solid fa-van-shuttle ml-2"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- navbar end -->
+        <!-- hero section start -->
+        <div class="mx-auto max-w-7xl relative">
+            <div
+                class=" flex justify-center items-center lg:mt-12  bg-[url(/images/banner.png)] bg-no-repeat bg-contain  m-3  ">
+                <div class="lg:pb-[176px] lg:pt-[70px] py-[15px] ">
+
+                    <h1
+                        class="raleway font-extrabold lg:text-[64px] text-2xl lg:w-[742px] w-[280px] text-center mx-auto text-white lg:mb-4 mb-1">
+                        End-to-End Travel with <span class="text-[#1dd100]">P Paribahan</span></h1>
+
+                    <p
+                        class="inter lg:mb-8 mb-2 font-normal lg:w-[690px] w-[280px] text-center mx-auto text-white  px-8 text-[10px] lg:text-xl ">
+                        Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                        features allow for a streamlined .</p>
+
+                    <div class="flex justify-center">
+                        <button
+                            class="bg-[#1dd100] lg:text-xl font-bold raleway lg:px-8 lg:py-5 px-4 py-2 lg:rounded-2xl rounded-lg">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex lg:gap-6 lg:flex-row flex-col gap-y-3 m-3 justify-center lg:absolute lg:top-full lg:left-2/4 lg:translate-x-[-50%] lg:translate-y-[-50%]">
+                
+                <div class="flex lg:gap-4 gap-4 lg:p-8 p-2 lg:border-b-4 border-b-2 lg:justify-start justify-center border-[#1DD100] lg:w-[308px] lg:rounded-3xl rounded-lg lg:bg-white bg-[#1dd1001A]">
+                    <img class="" src="./images/people.png" alt="">
+                    <div >
+                        <h3 class="inter text-4xl font-bold">500K+</h3>
+                        <p class="inter text-xl  text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+
+                <div class="flex lg:gap-4 gap-4 lg:p-8 p-2 lg:border-b-4 border-b-2 lg:justify-start justify-center border-[#1DD100] lg:w-[308px] lg:rounded-3xl rounded-lg lg:bg-white bg-[#1dd1001A]">
+                    <img class="" src="./images/ticket-cupon.png" alt="">
+                    <div >
+                        <h3 class="inter text-4xl font-bold">1.7 lacks</h3>
+                        <p class="inter text-xl  text-[#03071299]">Tickets Sold</p>
+                    </div>
+                </div>
+
+                <div class="flex lg:gap-4 gap-4 lg:p-8 p-2 lg:border-b-4 border-b-2 lg:justify-start justify-center border-[#1DD100] lg:w-[308px] lg:rounded-3xl rounded-lg lg:bg-white bg-[#1dd1001A]">
+                    <img class="" src="./images/stoppage.png" alt="">
+                    <div >
+                        <h3 class="inter text-4xl font-bold">80K+</h3>
+                        <p class="inter text-xl  text-[#03071299]">Rental partners</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- hero section End -->
+    </header>
+    <main></main>
+    <footer></footer>
+
 
 
     <script src="./Scripts/tailwind.config.js"></script>
 </body>
+
 </html>
